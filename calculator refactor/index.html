@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- linking style sheet  -->
+    <link rel="stylesheet" href="style.css" />
+    <title>A Simple Calculator</title>
+  </head>
+  <body>
+    <!-- instructions to use  -->
+    <p class = "instructions">Use buttons or keyboard keys to enter numbers</p>
+    <p class="instructions">Use buttons to select operations</p>
+    <section class="container">
+      <div class="output-area">
+      </div>
+      <div class="current-operation"></div>
+      <div class="current-result"></div>
+      <div class="input-area">
+        <!-- Calculator layout  -->
+        <div class="row first-row">
+          <button id="AC">AC</button>
+          <button id="x"><i class="fas fa-backspace"></i></button>
+          <button value="%" id="mod">%</button>
+          <button value="+" id="add">+</button>
+        </div>
+        <div class="row second-row">
+          <button value="7">7</button>
+          <button value="8">8</button>
+          <button value="9">9</button>
+          <button value="-" id="sub">-</button>
+        </div>
+        <div class="row third-row">
+          <button value="4">4</button>
+          <button value="5">5</button>
+          <button value="6">6</button>
+          <button value="*" id="mul">*</button>
+        </div>
+        <div class="row four-row">
+          <button value="1">1</button>
+          <button value="2">2</button>
+          <button value="3">3</button>
+          <button value="/" id="divide">/</button>
+        </div>
+        <div class="row fifth-row">
+          <button value=""></button>
+          <button value="0">0</button>
+          <button value=".">.</button>
+          <button id="equals-to">=</button>
+        </div>
+      </div>
+    </section>
+    <!-- linking javascript files  -->
+    <script src="script.js"></script>
+    <script src="functions.js"></script>
+  </body>
+</html>
